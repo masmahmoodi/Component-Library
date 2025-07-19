@@ -1,15 +1,35 @@
 * {
   box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 
-.badges-container, .badge-heading, .banner-info, .b1{
+
+.badges-container,
+ .badge-heading, 
+ .banner-info, .b1, 
+ .banners-container, 
+ .card-container,
+ .card , 
+ .testimonial-container,
+ .testimonial{
   display: flex;
-  flex-wrap: wrap;
+  
  
 }
 
-.badge-heading, .badge-heading
+.badges-container .card-container{
+flex-wrap: wrap;
+}
+
+.badge-heading, .badge-heading,
+.card-container
+, .testimonial-container
 {
     justify-content: center;
     align-items: center;
@@ -19,16 +39,12 @@
   gap: 10px; 
   padding: 20px;
 }
-
-
 .badges { 
   padding: 10px 20px;
   border-radius: 4px;
   text-align: center;
   flex: 0 0 calc(100% / 8 - 10px);
 }
-
-
 .banner, .banne-without-txt{
     padding: 20px;
     background-color: red;
@@ -41,26 +57,21 @@
 }
 
 
-.b1{
-  display: flex;
+.b1, .banners-container{
   flex-direction: column;
 }
 
 .banners-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px; /* Optional spacing between banners */
-  align-items: center; /* Optional: center banners horizontally */
+  gap: 20px;
+  align-items: center;
   padding: 20px;
 }
-
-.card-container{
+.card-container {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
-
 
 .card{
 
@@ -69,70 +80,49 @@
   background-color: #F9FAFB;
   width: 30%;
   padding: 20px;
-  display: flex;
   align-items: center;
   flex-direction:column;
   text-align: center;
   box-shadow: 1px 1px 3px rgb(224, 220, 220);
   
 }
-
 .card:hover{
   box-shadow: 5px 5px 3px rgb(224, 220, 220);
 }
-
 .icon-wrapper{
   top: -25px;
   position: absolute;
   font-size: 45px;
 }
-
 .icon-wrapper i{
   color: #3F75FE;
 }
-
 .testimonial-container{
   margin-top: 60px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  /* position: relative; */
 }
-
 .testimonial{
   width: 70%;
   display: flex;
   align-items: center;
   background-color: #3F75FE;
   position: relative;
-  /* justify-content: center; */
   padding: 20px;
   
 }
-
 .testimonial-img{
-   position: absolute;
-  /* top: 50%;  */
+  position: absolute;
   top:-20px;
-
 }
-
-
 .testimonial-info{
   margin-left: 280px;
   padding: 10px;
-  color: #FFFFFF;
-  
+  color: #FFFFFF; 
 }
-
 .testimonial-info i{
   color: #e5e4e4;
   font-size: 18px;
 }
-
-
 .testimonial-img img{
   width: 250px;
-  /* position: absolute; */
 }
 
