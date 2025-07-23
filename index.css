@@ -4,11 +4,12 @@
   overflow-wrap: break-word;
 }
 
+/*  */
+
 body {
-  overflow-x: hidden;
+  overflow-x: hidden; 
+  /* */
 }
-
-
 
 .badges-container,
  .badge-heading, 
