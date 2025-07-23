@@ -1,6 +1,5 @@
 import React from "react"
-
-
+//  Cards component 
 export default function Cards({children,card_title}){
     return (
        <div className="card">

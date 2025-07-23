@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../../assets/Image.png"
-
+// TestimonialsWithImg component
 export default function TestimonialsWithImg(){
     return (
         <div className="testimonial">
